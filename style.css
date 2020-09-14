@@ -4,7 +4,6 @@
     /* sin ése "*" me quedaba un margen arriba por más que se lo aplicara a html y body */
 }
 
-
 html, body {
     font-family: 'Montserrat', sans-serif;
     background: url(fondo.jpg) no-repeat center center fixed; 
@@ -43,7 +42,7 @@ li {
     list-style: none;
 }
 
-a {
+a, h2 {
     color: #E2DBDB;
     width: 100%;
     height: 40px;
@@ -64,9 +63,23 @@ a:hover, a:active {
     background-color: #ee4b08;
 }
 
-.portada {
-    width: 100%;
-    height: auto;
+.card {
+    width: 400px;
+    box-shadow: 4px 4px 3px #E2DBDB;
+    text-align: center;
+    margin: 10px;
+    background-color: #F05F44;
+}
+
+.text-box {
+  padding: 10px;
+}
+
+.container_card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 900px) {
@@ -76,5 +89,8 @@ a:hover, a:active {
     li {
         height: 100%;
         background-color: #F05F44;
+    }
+    .container_card {
+        margin-top: 180px;
     }
 }
